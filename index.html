@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RoboticsMaestro Agentic AI & Robotics Academy</title>
+<style>
+:root{--navy:#07172f;--blue:#0b3764;--cyan:#19d9ec;--paper:#f4f8fc;--ink:#102640}
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,sans-serif;background:var(--paper);color:var(--ink)}
+header{background:linear-gradient(120deg,var(--navy),var(--blue));color:white;padding:3rem max(1rem,calc((100% - 1100px)/2));border-bottom:5px solid var(--cyan)}
+header h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.05;margin:.3rem 0}.kicker{color:var(--cyan);font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+main{max-width:1100px;margin:auto;padding:1.5rem}.tools{display:flex;gap:.75rem;flex-wrap:wrap;margin:1rem 0}
+input,select{padding:.8rem;border:1px solid #9fb2c8;border-radius:.6rem;font:inherit}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+.card{background:white;padding:1.1rem;border:1px solid #d7e2ee;border-radius:1rem;box-shadow:0 4px 14px #1026400b}.card h3{margin:.25rem 0;color:#073a68}
+.tag{display:inline-block;border-radius:999px;background:#e0faff;color:#07546b;padding:.15rem .6rem;font-size:.8rem;font-weight:700}
+a{color:#075d9c}progress{width:100%;height:1.2rem;accent-color:#08a9c4}details{background:white;border:1px solid #d7e2ee;border-radius:.8rem;padding:.8rem 1rem;margin:.65rem 0}
+.cta{background:#07172f;color:white;padding:1.5rem;border-radius:1rem;margin-top:1.5rem}footer{background:#07172f;color:#dbe9f7;padding:1.5rem;text-align:center;margin-top:2rem}
+</style></head><body>
+<header><div class="kicker">RoboticsMaestro Academy</div><h1>Agentic AI & Robotics<br>Engineering Program</h1>
+<p><strong>Learn it. Build it. Test it. Prove it.</strong> An 18-week, three-level path from AI foundations to production-minded agentic systems and simulation-first robotics.</p>
+<p>GitHub Copilot · Claude Code · Claude Cowork · Azure AI Foundry · Amazon Bedrock · Google Vertex AI · MCP · ROS 2 · Gazebo</p>
+<a style="color:#19d9ec;font-weight:800" href="curriculum/PROGRAM_GUIDE.md">Open the full program guide →</a></header>
+<main><h2>Explore the curriculum</h2><p>Search or filter by level. Completion is stored in this browser only.</p>
+<div class="tools"><input id="search" type="search" placeholder="Search topics, tools, outcomes…"><select id="level"><option value="all">All levels</option><option>Foundation</option><option>Intermediate</option><option>Advanced</option></select></div>
+<div class="grid" id="weeks"></div><h2>Learning progress</h2><p id="progressText">0 of 18 weeks complete</p><progress id="progress" max="18" value="0"></progress>
+<h2>Level gates</h2>
+<details><summary><strong>Foundation — Weeks 1–6</strong></summary><p>AI literacy, Git/GitHub, coding assistants, prompt tests, Python/APIs, bounded tools and simulation robotics. Capstone: AI helper and tested state machine.</p></details>
+<details><summary><strong>Intermediate — Weeks 7–12</strong></summary><p>RAG, tool use/MCP concepts, workflows, evaluation, cloud comparisons and ROS 2 simulation. Capstone: grounded operations agent or telemetry assistant.</p></details>
+<details><summary><strong>Advanced — Weeks 13–18</strong></summary><p>Multi-agent patterns, CI/CD, threat modeling, reliability, Physical AI, research and hackathon defense.</p></details>
+<h2>Hackathon themes</h2><div class="grid"><article class="card"><h3>Knowledge Navigator</h3><p>RAG, citations, accessibility and abstention.</p></article><article class="card"><h3>AI Operating Partner</h3><p>Lead intake, qualification, CRM mock and human-approved follow-up.</p></article><article class="card"><h3>Robotics Maintenance</h3><p>Analyze simulated telemetry and recommend safe next steps.</p></article><article class="card"><h3>Multicloud Evaluator</h3><p>Compare task success, latency, cost and controls.</p></article></div>
+<div class="cta"><h2>Ready to build?</h2><p>Choose a lab, commit evidence and request review. Keep credentials private and physical robotics simulation-first.</p><a style="color:#19d9ec" href="curriculum/WEEKLY_PLAN.md">Weekly plan</a> · <a style="color:#19d9ec" href="projects/ADVANCED_CAPSTONE.md">Advanced capstone</a> · <a style="color:#19d9ec" href="governance/RESPONSIBLE_AI_AND_ROBOTICS.md">Safety guide</a></div></main>
+<footer>RoboticsMaestro™ — Smart systems. Intelligent engineering. Training curriculum, not an accredited degree or vendor certification.</footer>
+<script>
+const W=[
+[1,"AI and engineering foundations","Foundation","Models, tokens, context, uncertainty and responsible use."],
+[2,"GitHub and AI-assisted development","Foundation","Git, pull requests, Copilot, Claude Code and testing."],
+[3,"Prompt and context engineering","Foundation","Schemas, examples, prompt tests and failure analysis."],
+[4,"Python, APIs and data","Foundation","Modules, JSON, HTTP, errors and environment variables."],
+[5,"First AI app and bounded agent","Foundation","Model adapter, deterministic tools and approval gates."],
+[6,"Robotics foundations and capstone","Foundation","Sensors, actuators, state machines and simulation."],
+[7,"Retrieval-augmented generation","Intermediate","Chunking, retrieval, metadata, citations and abstention."],
+[8,"Tools, function calling and MCP","Intermediate","Schemas, least privilege, timeouts and audit."],
+[9,"Stateful workflows and approval","Intermediate","State transitions, retries, idempotency and escalation."],
+[10,"Evaluation and observability","Intermediate","Benchmarks, groundedness, traces, latency and cost."],
+[11,"Cloud AI platforms","Intermediate","Azure AI Foundry, Bedrock, Vertex AI and portability."],
+[12,"ROS 2, perception and simulation","Intermediate","Nodes/topics, telemetry and simulator capstone."],
+[13,"Multi-agent architectures","Advanced","Supervisor/specialist patterns and baseline comparisons."],
+[14,"Production engineering and CI/CD","Advanced","Containers, tests, secrets, rollback and deployment."],
+[15,"Security, governance and reliability","Advanced","Prompt injection, data leakage, tool abuse and budgets."],
+[16,"Physical AI and digital twins","Advanced","Sim-to-real gap, telemetry, safe stop and supervision."],
+[17,"Research and commercialization","Advanced","Hypotheses, baselines, validation, privacy and IP."],
+[18,"Final hackathon and defense","Advanced","Build, evaluate, demo, defend and reflect."]];
+const C=JSON.parse(localStorage.getItem("rm-completed")||"{}");
+function render(){let q=document.querySelector("#search").value.toLowerCase(),l=document.querySelector("#level").value,root=document.querySelector("#weeks");root.innerHTML="";
+W.filter(w=>(l==="all"||w[2]===l)&&w.join(" ").toLowerCase().includes(q)).forEach(w=>{let e=document.createElement("article");e.className="card";e.innerHTML=`<span class="tag">Week ${w[0]} · ${w[2]}</span><h3>${w[1]}</h3><p>${w[3]}</p><label><input type="checkbox" data-n="${w[0]}" ${C[w[0]]?"checked":""}> Mark complete</label>`;root.appendChild(e)});
+root.querySelectorAll("input").forEach(i=>i.addEventListener("change",()=>{C[i.dataset.n]=i.checked;localStorage.setItem("rm-completed",JSON.stringify(C));update()}))}
+function update(){let n=Object.values(C).filter(Boolean).length;document.querySelector("#progress").value=n;document.querySelector("#progressText").textContent=`${n} of 18 weeks complete`}
+document.querySelector("#search").addEventListener("input",render);document.querySelector("#level").addEventListener("change",render);render();update();
+</script></body></html>
