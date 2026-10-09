@@ -1,3 +1,7 @@
+
+<img width="681" height="947" alt="Screenshot 2026-10-08 at 11 41 58 PM" src="https://github.com/user-attachments/assets/d803e2b7-2d3a-49b3-8921-4a358011182e" />
+
+
 # RoboticsMaestro Agentic AI & Robotics Academy
 **Three-level, project-based curriculum | Foundation → Intermediate → Advanced**
 
