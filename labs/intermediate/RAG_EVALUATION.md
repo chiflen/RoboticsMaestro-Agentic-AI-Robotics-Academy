@@ -1,0 +1,2 @@
+# Lab I1 — Retrieval and Grounded Answers
+Create 5–10 public/synthetic documents with stable IDs and source URIs. Define 20 answerable, ambiguous and unanswerable questions. Implement keyword retrieval first; optional embeddings later. Return source IDs and supporting snippets. Abstain when evidence is missing. Measure retrieval hit rate, citation support and abstention precision. Add prompt-injection text to one document and verify it remains data, not policy.

@@ -1,0 +1,13 @@
+# Project Brief Template
+- ID/title/team/level/date:
+- User and pain point:
+- Evidence and success metric:
+- Scope / non-scope / assumptions / constraints:
+- Architecture and components:
+- Model/provider and tools:
+- Data classification:
+- Human approval points:
+- Threat model and mitigations:
+- Baseline, test set, metrics and acceptance threshold:
+- Milestones and demo:
+- Cost estimate, license/IP, limitations and next steps:
